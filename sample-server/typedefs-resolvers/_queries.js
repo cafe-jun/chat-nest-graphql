@@ -10,6 +10,8 @@ const typeDefs = gql`
         softwares: [Software]
         software: [Software]
         people: [People]
+        peopleFiltered(team: Int, sex: Sex, blood_type: BloodType, from: String): [People]
+        peoplePaginated(page: Int!, per_page: Int!): [People]
     }
 `;
 
