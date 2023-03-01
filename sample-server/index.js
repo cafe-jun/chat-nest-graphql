@@ -9,6 +9,7 @@ const softwares = require('./typedefs-resolvers/softwares');
 const supplies = require('./typedefs-resolvers/supplies');
 const givens = require('./typedefs-resolvers/givens');
 const tools = require('./typedefs-resolvers/tools');
+const users = require('./typedefs-resolvers/users');
 
 const typeDefs = [
     queries,
@@ -20,6 +21,7 @@ const typeDefs = [
     supplies.typeDefs,
     givens.typeDefs,
     tools.typeDefs,
+    users,
 ];
 
 const resolvers = [people.resolvers, equipments.resolvers, softwares.resolvers, supplies.resolvers, givens.resolvers, tools.resolvers];
