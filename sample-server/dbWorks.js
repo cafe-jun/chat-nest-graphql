@@ -1,5 +1,10 @@
 const database = require('./database.js');
-
+/**
+ * database filter 인자
+ * @param {*} which
+ * @param {*} args
+ * @returns
+ */
 const dataFiltered = (which, args) => {
     let result = database[which].filter((item) => {
         // 조건인자가 없거나, 페이징 관련 인자거나
