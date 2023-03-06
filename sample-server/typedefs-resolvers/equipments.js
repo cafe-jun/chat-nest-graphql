@@ -13,6 +13,7 @@ const typeDefs = gql`
         count: Int!
         use_rate: Float
         is_new: Boolean!
+        users: [String!]
     }
 `;
 
