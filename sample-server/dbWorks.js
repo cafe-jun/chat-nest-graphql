@@ -1,9 +1,7 @@
 const database = require('./database.js');
 /**
  * database filter 인자
- * @param {*} which
- * @param {*} args
- * @returns
+
  */
 const dataFiltered = (which, args) => {
     let result = database[which].filter((item) => {
