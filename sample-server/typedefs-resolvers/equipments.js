@@ -13,11 +13,9 @@ const typeDefs = gql`
         count: Int!
         use_rate: Float
         is_new: Boolean!
-        users: [String!]
     }
 `;
 
-console.log('test123');
 const resolvers = {
     Query: {
         equipments: (parent, args) => dbWorks.getEquipments(args),
