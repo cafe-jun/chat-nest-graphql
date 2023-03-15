@@ -17,6 +17,7 @@ const typeDefs = gql`
     }
 `;
 
+console.log('test123');
 const resolvers = {
     Query: {
         equipments: (parent, args) => dbWorks.getEquipments(args),
