@@ -21,7 +21,6 @@ const typeDefs = [
     supplies.typeDefs,
     givens.typeDefs,
     tools.typeDefs,
-    users,
 ];
 
 const resolvers = [people.resolvers, equipments.resolvers, softwares.resolvers, supplies.resolvers, givens.resolvers, tools.resolvers];
